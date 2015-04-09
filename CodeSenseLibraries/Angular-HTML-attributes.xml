@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+CodeSense Libraries simply define lists of completions, categorized by keys. They don't define any criteria for when they should be used; this is the domain of a CodeSense Provider.
+
+-->
+<codesense version="1.0">
+
+	<!-- Source: https://docs.angularjs.org/api/ng/directive -->
+
+	<behavior>
+		<append-dynamic>
+			<matched-suffix>(\s*=)|[^=]</matched-suffix>
+			<transform-into>(?1::="$1"$0)</transform-into>
+		</append-dynamic>
+	</behavior>
+	
+	<set name="olach.com.github.angular.html.tag.standard-attributes">
+		<completion string="ng-jq" />
+		<completion string="ng-app" />
+		<completion string="ng-strict-di" />		
+		<completion string="ng-src" />
+		<completion string="ng-srcset" />
+		<completion string="ng-disabled" />
+		<completion string="ng-checked" />
+		<completion string="ng-readonly" />
+		<completion string="ng-selected" />
+		<completion string="ng-open" />
+		<completion string="ng-form" />
+		<completion string="ng-bind" />
+		<completion string="ng-bind-template" />
+		<completion string="ng-bind-html" />
+		<completion string="ng-change" />
+		<completion string="ng-class" />
+		<completion string="ng-class-odd" />
+		<completion string="ng-class-even" />
+		<completion string="ng-cloak">
+			<behavior>
+				<append-static></append-static>
+			</behavior>
+		</completion>
+		<completion string="ng-controller" />
+		<completion string="ng-click" />
+		<completion string="ng-dblclick" />
+		<completion string="ng-mousedown" />
+		<completion string="ng-mouseup" />
+		<completion string="ng-mouseover" />
+		<completion string="ng-mouseenter" />
+		<completion string="ng-mouseleave" />
+		<completion string="ng-mousemove" />
+		<completion string="ng-keydown" />
+		<completion string="ng-keyup" />
+		<completion string="ng-keypress" />
+		<completion string="ng-if" />
+		<completion string="ng-include" />
+		<completion string="ng-init" />
+		<completion string="ng-model" />
+		<completion string="ng-model-options" />
+		<completion string="ng-non-bindable">
+			<behavior>
+				<append-static></append-static>
+			</behavior>
+		</completion>
+		<completion string="ng-options" />
+		<completion string="count" />
+		<completion string="when" />
+		<completion string="offset" />
+		<completion string="ng-repeat" />
+		<completion string="ng-repeat-start" />
+		<completion string="ng-repeat-end">
+			<behavior>
+				<append-static></append-static>
+			</behavior>
+		</completion>
+		<completion string="ng-show" />
+		<completion string="ng-hide" />
+		<completion string="ng-style" />
+		<completion string="ng-switch" />
+		<completion string="ng-switch-when" />
+		<completion string="ng-switch-default">
+			<behavior>
+				<append-static></append-static>
+			</behavior>
+		</completion>
+	</set>
+	
+	<set name="olach.com.github.angular.html.tag.html.attributes">
+		<completion string="ng-csp">
+			<behavior>
+				<append-static></append-static>
+			</behavior>
+		</completion>
+	</set>
+	
+	<set name="olach.com.github.angular.html.tag.a.attributes">
+		<completion string="ng-href" />
+		<completion string="ng-focus" />
+		<completion string="ng-blur" />
+		<completion string="ng-copy" />
+		<completion string="ng-cut" />
+		<completion string="ng-paste" />
+	</set>
+	
+	<set name="olach.com.github.angular.html.tag.img.attributes">
+		<completion string="ng-src" />
+	</set>
+	
+	<set name="olach.com.github.angular.html.tag.textarea.attributes">
+		<completion string="ng-required" />
+		<completion string="ng-minlength" />
+		<completion string="ng-maxlength" />
+		<completion string="ng-pattern" />
+		<completion string="ng-trim" />
+		<completion string="ng-focus" />
+		<completion string="ng-blur" />
+		<completion string="ng-copy" />
+		<completion string="ng-cut" />
+		<completion string="ng-paste" />
+	</set>
+	
+	<set name="olach.com.github.angular.html.tag.input.attributes">
+		<completion string="ng-required" />
+		<completion string="ng-minlength" />
+		<completion string="ng-maxlength" />
+		<completion string="ng-pattern" />
+		<completion string="ng-trim" />
+		<completion string="ng-value" />
+		<completion string="ng-focus" />
+		<completion string="ng-blur" />
+		<completion string="ng-copy" />
+		<completion string="ng-cut" />
+		<completion string="ng-paste" />
+		<completion string="ng-list" />
+	</set>
+	
+	<set name="olach.com.github.angular.html.tag.select.attributes">
+		<completion string="ng-focus" />
+		<completion string="ng-blur" />
+		<completion string="ng-copy" />
+		<completion string="ng-cut" />
+		<completion string="ng-paste" />
+	</set>
+	
+	<set name="olach.com.github.angular.html.tag.option.attributes">
+		<completion string="ng-required" />
+		<completion string="ng-value" />
+	</set>
+	
+	<set name="olach.com.github.angular.html.tag.form.attributes">
+		<completion string="ng-submit" />
+	</set>
+	
+	<set name="olach.com.github.angular.html.tag.window.attributes">
+		<completion string="ng-focus" />
+		<completion string="ng-blur" />
+		<completion string="ng-copy" />
+		<completion string="ng-cut" />
+		<completion string="ng-paste" />
+	</set>
+		
+</codesense>
